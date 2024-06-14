@@ -10,7 +10,7 @@ import Projects from "./Components/Projects";
 
 function App() {
   return (
-    <Container disableGutters maxWidth="lg" sx={{ bgcolor: "#232323" }} >
+    <Container disableGutters maxWidth="lg" sx={{ bgcolor: "#191919" }} >
         <Header />
         <Home />
         <Skills />
