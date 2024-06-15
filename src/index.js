@@ -13,8 +13,7 @@ const theme = createTheme({
             variant: "body3"
           },
           style: {
-            fontSize: 12,
-            fontFamily: '"Montserrat", serif'
+            fontSize: 14,
           }
         }
 
@@ -30,7 +29,7 @@ const theme = createTheme({
       main: "#6A98F0"
     },
     secondary: {
-      main: "#dc004e"
+      main: "#1a1a1a"
     }
   }
 })

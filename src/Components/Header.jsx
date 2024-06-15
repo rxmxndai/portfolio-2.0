@@ -1,23 +1,22 @@
 import { AppBar, Box, Container, IconButton, Toolbar, Typography } from "@mui/material"
-import Skills from "./Skills"
 
 
 
 const navItems = [
   {
-    title: "Home",
+    title: "HOME",
     goto: "#"
   },
   {
-    title: "Skills",
+    title: "SKILLS",
     goto: "#skills"
   },
   {
-    title: "Projects",
+    title: "PROJECTS",
     goto: "#projects"
   },
   {
-    title: "Contacts",
+    title: "CONTACTS",
     goto: "#contacts"
   },
 ]
@@ -29,10 +28,10 @@ const Header = () => {
 
   return (
     <AppBar  position="sticky" sx={{bgcolor: "#232323"}} >
-      <Container disableGutters  >
+      <Container  >
         <Toolbar  >
 
-          <Typography variant="h6" sx={{ flexGrow: 1, color: "#6A98F0" }}> LOGO </Typography>
+          <Typography variant="body2" sx={{ userSelect: "none", cursor: "pointer",  fontWeight: "bold", color: "#6A98F0" }}> PORTFOLIO </Typography>
 
           <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "flex-end", gap: "30px" }} >
             {navItems.map(nav => ( 
@@ -41,9 +40,9 @@ const Header = () => {
                     key={nav.goto} 
                     cursor= "pointer"
                     color= "inherit"
-                    sx= {{ fontSize: "18px", fontWeight: "light"}}   
+                    sx= {{ fontWeight: "light"}}   
                     component={"a"}> 
-                      {nav.title}  
+                      <Typography variant="body3" > {nav.title}   </Typography>
               </IconButton>
               ))}
           </Box>
