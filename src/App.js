@@ -1,10 +1,9 @@
-import Header from "./Components/Header";
-
 import { Container } from "@mui/material";
-import Home from "./Components/Home";
-import Skills from "./Components/Skills";
-import Footer from "./Components/Footer";
-import Projects from "./Components/Projects";
+import Header from "./pages/Header";
+import Home from "./pages/Home";
+import Skills from "./pages/Skills";
+import Footer from "./pages/Footer";
+import Projects from "./pages/Projects";
 
 
 

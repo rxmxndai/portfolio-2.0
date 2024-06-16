@@ -13,24 +13,15 @@ const theme = createTheme({
             variant: "body3"
           },
           style: {
-            fontSize: 14,
+            fontSize: 16,
+            color: "#ccc"
           }
         }
-
-
       ]
     }
   },
   typography: {
     fontFamily: '"Montserrat", serif',
-  },
-  palettte: {
-    primary: {
-      main: "#6A98F0"
-    },
-    secondary: {
-      main: "#1a1a1a"
-    }
   }
 })
 

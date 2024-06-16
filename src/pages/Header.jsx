@@ -31,7 +31,7 @@ const Header = () => {
       <Container  >
         <Toolbar  >
 
-          <Typography variant="body2" sx={{ userSelect: "none", cursor: "pointer",  fontWeight: "bold", color: "#6A98F0" }}> PORTFOLIO </Typography>
+          <Typography variant="body3" sx={{ userSelect: "none", cursor: "pointer",  fontWeight: "bold", color: "#6A98F0" }}> PORTFOLIO </Typography>
 
           <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "flex-end", gap: "30px" }} >
             {navItems.map(nav => ( 
@@ -39,8 +39,7 @@ const Header = () => {
                     href={nav.goto}
                     key={nav.goto} 
                     cursor= "pointer"
-                    color= "inherit"
-                    sx= {{ fontWeight: "light"}}   
+                    color= "inherit"   
                     component={"a"}> 
                       <Typography variant="body3" > {nav.title}   </Typography>
               </IconButton>

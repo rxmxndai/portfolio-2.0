@@ -3,21 +3,13 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 
-const codeString = `class Human {
-  constructor() {
-    this.name = "Roman Karki";
-    this.languages = ["JavaScript", "TypeScript", "C++"];
-    this.skills = ["NodeJS", "NextJS", "ExpressJS"];
-  }
-}`;
-
 const Home = () => {
 
 
   return (
     <Container>
       {/* Main Home Division */}
-      <Box display={"flex"} height={"calc(70vh)"} overflow={"hidden"} >
+      <Box display={"flex"} height={"calc(80vh)"} overflow={"hidden"} >
 
         {/* Left Div */}
         <Box flex={1} padding={"20px"}
@@ -27,7 +19,7 @@ const Home = () => {
 
           <Box display="flex" flexDirection="column" gap={"20px"} >
 
-            <Typography variant="h4" fontFamily={"Montserrat"} fontWeight={"extra bold"}> ROMAN KARKI </Typography>
+            <Typography variant="h3" fontFamily={"Montserrat"} fontWeight={"bold"}> ROMAN KARKI </Typography>
             <Typography variant="body2"> Java / JS Developer  </Typography>
 
             <Stack direction="row" spacing={1} >
@@ -77,7 +69,7 @@ const Home = () => {
           <Box
             sx={{
               width: "80%",
-              height: "30%",
+              height: "25%",
               backgroundColor: '#232323',
               borderRadius: '12px',
               position: "absolute",
@@ -88,7 +80,7 @@ const Home = () => {
             <img
                   src={require('../assets/dev-dv.png')}
                   alt="code snippet"
-                  style={{  position: "absolute", top: 20, left: 20, width: "100%", height: '100%', borderRadius: "12px", boxShadow: "0px 0px 50px #6A98F0"}}
+                  style={{  position: "absolute", top: 50, left: 50, width: "100%", height: "100%", borderRadius: "12px", boxShadow: "0px 0px 50px #6A98F0"}}
                 />
           </Box>
 
