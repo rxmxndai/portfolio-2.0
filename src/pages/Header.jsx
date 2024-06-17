@@ -36,12 +36,13 @@ const Header = () => {
           <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "flex-end", gap: "30px" }} >
             {navItems.map(nav => ( 
               <IconButton 
+                    sx={{ fontSize: "14px", color: "#ccc" }}
                     href={nav.goto}
                     key={nav.goto} 
                     cursor= "pointer"
                     color= "inherit"   
                     component={"a"}> 
-                      <Typography variant="body3" > {nav.title}   </Typography>
+                      {nav.title}
               </IconButton>
               ))}
           </Box>

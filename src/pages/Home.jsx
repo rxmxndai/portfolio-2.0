@@ -1,7 +1,16 @@
-import { Container, Typography, Box, Button, IconButton, Stack } from '@mui/material';
+import { Container, Typography, Box, Button, IconButton, Stack, styled } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
+
+
+
+const ViewResume = styled(Button)( () => ({
+  backgroundColor: "#6A98F0",
+  padding: "10px 20px",
+  borderRadius: "50px",
+}
+))  
 
 const Home = () => {
 
@@ -32,14 +41,14 @@ const Home = () => {
             </Stack>
 
             <Box >
-              <Button
+              <ViewResume
                 sx={{ p: "10px 20px" }}
                 size="medium"
                 variant='contained'
                 target="_blank"
                 href="https://drive.google.com/file/d/1GDJUIj_Di0m3m6SOydkxKN7K1zP4992I/view?usp=drive_link">
                 View Resume
-              </Button>
+              </ViewResume>
             </Box>
           </Box>
 
