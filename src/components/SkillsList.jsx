@@ -13,6 +13,7 @@ const TitleField = styled(Button)( ({active}) => ({
   backgroundColor: active ? "#6A98F0" : "transparent",
   color: active ? "#fff" : "#ccc",
   padding: "10px 20px",
+  fontSize: "16px",
   borderRadius: "50px",
   textTransform: "none",
   '&:hover': {
@@ -27,7 +28,7 @@ const SkillsList = ({ skillsList, active, setActive }) => {
       <List sx={{display: "flex",  width: "50%"}} >
         {skillsList.map(skill => (
           <CustomListItem  key={skill.id} onClick={() => setActive(skill.id)}>
-              <TitleField active={active === skill.id} variant="body1" > {skill.title} </TitleField>
+              <TitleField active={active === skill.id} variant="body1"  > {skill.title} </TitleField>
           </CustomListItem>
         ))}
       </List>

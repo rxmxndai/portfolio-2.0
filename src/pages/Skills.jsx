@@ -3,6 +3,7 @@ import SkillsList from "../components/SkillsList"
 import { useEffect, useState } from "react"
 
 import { frontend, backend, tools, programming } from "../assets/skillsData"
+import SectionHeader from "../components/SectionHeader"
 
 
 
@@ -61,30 +62,29 @@ const Skills = () => {
 
 
   return (
-    <Container id="skills" disableGutters sx={{ p: "50px 0px", }} >
+    <Container id="skills" disableGutters sx={{ p: "50px 0px", minHeight: "80vh" }}  >
       <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: 'center', p: 5 }}>
-        <Typography variant="h6" sx={{ color: '#ccc', fontWeight: "bold", pb: "10px" }}>
-          Skills
-        </Typography>
-
+        
+        <SectionHeader header={"Skills"} />
 
         <SkillsList skillsList={skillsList} active={active} setActive={setActive} />
 
 
-        <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexWrap: "wrap", gap: "50px", maxWidth: "80%" }}>
+        <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexWrap: "wrap", gap: "70px", maxWidth: "80%", mt: "30px" }}>
           {data.map((skill) => (
               <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "20px", p: "10px 20px" }}>
                   <Box
                     component="img"
                     src={skill.image}
                     sx={{
-                      width: 54,
-                      height: 54,
+                      backgroundSize: "cover",
+                      width: 48,
+                      height: 48,
                       boxShadow: 10000
                     }}
                   />
 
-                <Typography variant="body2" sx={{ fontSize: "12px", fontWeight: "light"}} disableGutters > {skill.title} </Typography>
+                <Typography variant="body2" sx={{ fontSize: "14px", fontWeight: "light"}} disableGutters > {skill.title} </Typography>
               </Box>
           ))}
         </Box>

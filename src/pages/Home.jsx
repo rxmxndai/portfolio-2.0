@@ -69,7 +69,6 @@ const Home = () => {
               position: "absolute",
               top: 100,
               right: -100,
-
             }}
           >
           </Box>
@@ -79,7 +78,7 @@ const Home = () => {
             sx={{
               width: "80%",
               height: "25%",
-              backgroundColor: '#232323',
+              backgroundColor: '#333',
               borderRadius: '12px',
               position: "absolute",
               top: "40%",

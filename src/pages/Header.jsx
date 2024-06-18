@@ -27,11 +27,11 @@ const navItems = [
 const Header = () => {
 
   return (
-    <AppBar  position="sticky" sx={{bgcolor: "#232323"}} >
+    <AppBar  position="sticky" sx={{bgcolor: "#191919"}} >
       <Container  >
         <Toolbar  >
 
-          <Typography variant="body3" sx={{ userSelect: "none", cursor: "pointer",  fontWeight: "bold", color: "#6A98F0" }}> PORTFOLIO </Typography>
+          <IconButton href="#" variant="a" sx={{ userSelect: "none", cursor: "pointer", fontSize: "16px", fontWeight: "bold", color: "#6A98F0" }}> PORTFOLIO </IconButton>
 
           <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "flex-end", gap: "30px" }} >
             {navItems.map(nav => ( 
