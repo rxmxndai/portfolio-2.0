@@ -2,7 +2,7 @@ import { Box, Container, Typography } from "@mui/material"
 import SkillsList from "../components/SkillsList"
 import { useEffect, useState } from "react"
 
-import { frontend, backend, tools, programming } from "../assets/skillsData"
+import { frontend, backend, tools, programming } from "../assets/data/skillsData"
 import SectionHeader from "../components/SectionHeader"
 
 
@@ -62,8 +62,8 @@ const Skills = () => {
 
 
   return (
-    <Container id="skills" disableGutters sx={{ p: "50px 0px", minHeight: "80vh" }}  >
-      <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: 'center', p: 5 }}>
+    <Container disableGutters id="skills" sx={{ p: "50px 0px", minHeight: "80vh", }}  >
+      <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center",  p: 5,  }}>
         
         <SectionHeader header={"Skills"} />
 
@@ -72,7 +72,7 @@ const Skills = () => {
 
         <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexWrap: "wrap", gap: "70px", maxWidth: "80%", mt: "30px" }}>
           {data.map((skill) => (
-              <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "20px", p: "10px 20px" }}>
+              <Box key={skill.id} sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "20px", p: "10px 20px" }}>
                   <Box
                     component="img"
                     src={skill.image}
@@ -84,7 +84,7 @@ const Skills = () => {
                     }}
                   />
 
-                <Typography variant="body2" sx={{ fontSize: "14px", fontWeight: "light"}} disableGutters > {skill.title} </Typography>
+                <Typography variant="body2" sx={{ fontSize: "14px", fontWeight: "light"}} > {skill.title} </Typography>
               </Box>
           ))}
         </Box>

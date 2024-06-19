@@ -1,4 +1,4 @@
-import { AppBar, Box, Container, IconButton, Toolbar, Typography } from "@mui/material"
+import { AppBar, Box, Container, IconButton, Toolbar } from "@mui/material"
 
 
 
@@ -28,8 +28,7 @@ const Header = () => {
 
   return (
     <AppBar  position="sticky" sx={{bgcolor: "#191919"}} >
-      <Container  >
-        <Toolbar  >
+      <Toolbar >
 
           <IconButton href="#" variant="a" sx={{ userSelect: "none", cursor: "pointer", fontSize: "16px", fontWeight: "bold", color: "#6A98F0" }}> PORTFOLIO </IconButton>
 
@@ -47,7 +46,6 @@ const Header = () => {
               ))}
           </Box>
         </Toolbar>
-      </Container>
     </AppBar>
 
 

@@ -16,47 +16,46 @@ const Home = () => {
 
 
   return (
-    <Container>
+    <Container disableGutters sx={{ display: "flex", minHeight: "80vh", p: 5 }}  overflow={"hidden"} >
       {/* Main Home Division */}
-      <Box display={"flex"} height={"calc(80vh)"} overflow={"hidden"} >
 
         {/* Left Div */}
-        <Box flex={1} padding={"20px"}
+        <Box flex={1} 
           display={"flex"} alignItems={"center"} justifyContent={"left"}
         >
 
 
-          <Box display="flex" flexDirection="column" gap={"20px"} >
+        <Box display="flex" flexDirection="column" gap={"20px"} >
 
-            <Typography variant="h3" fontFamily={"Montserrat"} fontWeight={"bold"}> ROMAN KARKI </Typography>
-            <Typography variant="body2"> Java / JS Developer  </Typography>
+          <Typography variant="h3" fontFamily={"Montserrat"} fontWeight={"bold"}> ROMAN KARKI </Typography>
+          <Typography variant="body2"> Java / JS Developer  </Typography>
 
-            <Stack direction="row" spacing={1} >
-              <IconButton color="inherit" target="_blank" href="https://github.com/rxmxndai" >
-                <GitHubIcon fontSize='large' height="100%" />
-              </IconButton>
-              <IconButton color="primary" target="_blank" href="https://www.linkedin.com/in/roman-karki-bb3338241/" >
-                <LinkedInIcon fontSize='large' height="100%" />
-              </IconButton>
-            </Stack>
+          <Stack direction="row" spacing={1} >
+            <IconButton color="inherit" target="_blank" href="https://github.com/rxmxndai" >
+              <GitHubIcon fontSize='large' height="100%" />
+            </IconButton>
+            <IconButton color="primary" target="_blank" href="https://www.linkedin.com/in/roman-karki-bb3338241/" >
+              <LinkedInIcon fontSize='large' height="100%" />
+            </IconButton>
+          </Stack>
 
-            <Box >
-              <ViewResume
-                sx={{ p: "10px 20px" }}
-                size="medium"
-                variant='contained'
-                target="_blank"
-                href="https://drive.google.com/file/d/1GDJUIj_Di0m3m6SOydkxKN7K1zP4992I/view?usp=drive_link">
-                View Resume
-              </ViewResume>
-            </Box>
+          <Box >
+            <ViewResume
+              sx={{ p: "10px 20px" }}
+              size="medium"
+              variant='contained'
+              target="_blank"
+              href="https://drive.google.com/file/d/1GDJUIj_Di0m3m6SOydkxKN7K1zP4992I/view?usp=drive_link">
+              View Resume
+            </ViewResume>
           </Box>
+        </Box>
 
         </Box>
 
 
         {/* Right Div */}
-        <Box flex={1} position="relative" >
+        <Box flex={1} position="relative" overflow={"hidden"} >
 
 
           {/* Semi Circle */}
@@ -69,6 +68,7 @@ const Home = () => {
               position: "absolute",
               top: 100,
               right: -100,
+              opacity: 0.8
             }}
           >
           </Box>
@@ -76,7 +76,7 @@ const Home = () => {
           {/* Card */}
           <Box
             sx={{
-              width: "80%",
+              width: "70%",
               height: "25%",
               backgroundColor: '#333',
               borderRadius: '12px',
@@ -86,15 +86,14 @@ const Home = () => {
             }}
           >
             <img
-                  src={require('../assets/dev-dv.png')}
+                  src={require('../assets/images/dev-dv.png')}
                   alt="code snippet"
                   style={{  position: "absolute", top: 50, left: 50, width: "100%", height: "100%", borderRadius: "12px", boxShadow: "0px 0px 50px #6A98F0"}}
                 />
           </Box>
-
-
         </Box>
-      </Box>
+
+
     </Container>
   );
 };

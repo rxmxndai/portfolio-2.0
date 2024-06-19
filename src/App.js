@@ -9,7 +9,7 @@ import Projects from "./pages/Projects";
 
 function App() {
   return (
-    <Container disableGutters maxWidth="lg" sx={{ bgcolor: "#191919" }} >
+    <Container disableGutters sx={{ bgcolor: "#191919" }} >
         <Header />
         <Home />
         <Skills />
