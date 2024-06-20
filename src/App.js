@@ -1,21 +1,19 @@
-import { Container } from "@mui/material";
+import {  Container } from "@mui/material";
 import Header from "./pages/Header";
 import Home from "./pages/Home";
 import Skills from "./pages/Skills";
-import Contacts from "./pages/Contacts";
+import Career from "./pages/Career";
 import Projects from "./pages/Projects";
-
-
 
 function App() {
   return (
     <Container disableGutters sx={{ bgcolor: "#191919" }} >
-        <Header />
+      <Header />
         <Home />
         <Skills />
         <Projects />
-        <Contacts />
-      </Container>
+        <Career />
+    </Container>
   );
 }
 
