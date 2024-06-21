@@ -62,7 +62,7 @@ const Skills = () => {
 
 
   return (
-    <Container disableGutters id="skills" sx={{ p: "50px 0px", minHeight: "80vh" }}  >
+    <Container  maxWidth={"xl"} disableGutters id="skills" sx={{ p: "50px 0px", minHeight: "80vh" }}  >
       <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center",  p: 5,  }}>
         
         <SectionHeader header={"Skills"} />

@@ -6,7 +6,7 @@ import SingleProjectCard from '../components/SingleProjectCard';
 
 const Projects = () => {
   return (
-    <Container disableGutters id="projects" sx={{ p: "50px 0px", minHeight: "80vh",  }}  >
+    <Container  maxWidth={"xl"} disableGutters id="projects" sx={{ p: "50px 0px", minHeight: "80vh" }}  >
 
       <Box sx={{ p: 5, display: "flex", flexDirection: "column", alignItems: "center" }} >
 

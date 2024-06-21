@@ -21,7 +21,7 @@ const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: '"Montserrat", serif',
+    fontFamily: "Roboto, serif"
   }
 })
 

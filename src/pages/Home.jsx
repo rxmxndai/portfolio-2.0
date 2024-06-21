@@ -4,7 +4,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 
 
-
 const ViewResume = styled(Button)( () => ({
   backgroundColor: "#6A98F0",
   padding: "10px 20px",
@@ -16,7 +15,7 @@ const Home = () => {
 
 
   return (
-    <Container disableGutters sx={{ display: "flex", minHeight: "80vh", p: 5 }}  overflow={"hidden"} >
+    <Container  maxWidth={"xl"} disableGutters sx={{ display: "flex", minHeight: "80vh", p: 5 }}  overflow={"hidden"} >
       {/* Main Home Division */}
 
         {/* Left Div */}
@@ -63,34 +62,17 @@ const Home = () => {
             sx={{
               padding: "20px",
               height: "60%",
-              width: "100%",
+              width: "70%",
               borderRadius: "50%",
               position: "absolute",
               top: 100,
               right: -100,
-              opacity: 0.8
+              opacity: 0.7
             }}
           >
           </Box>
 
-          {/* Card */}
-          <Box
-            sx={{
-              width: "70%",
-              height: "25%",
-              backgroundColor: '#333',
-              borderRadius: '12px',
-              position: "absolute",
-              top: "40%",
-              left: 0,
-            }}
-          >
-            <img
-                  src={require('../assets/images/dev-dv.png')}
-                  alt="code snippet"
-                  style={{  position: "absolute", top: 50, left: 50, width: "100%", height: "100%", borderRadius: "12px", boxShadow: "0px 0px 50px #6A98F0"}}
-                />
-          </Box>
+         
         </Box>
 
 

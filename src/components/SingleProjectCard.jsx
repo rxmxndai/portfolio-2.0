@@ -2,11 +2,9 @@ import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/m
 
 const SingleProjectCard = ({ project }) => {
 
-    const featured = project.featured;
-
     return (
         <Card elevation={24}
-            sx={{ bgcolor: "#333", color: "#ffffff", display: "flex", flexDirection: "" }}
+            sx={{ bgcolor: "#333", color: "#ffffff", display: "flex", flexDirection: project.xs < 7 ? "column" : "row" }}
         >
             <CardActionArea sx={{ flex: 1  }} >
                 <CardMedia
