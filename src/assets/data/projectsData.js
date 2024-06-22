@@ -18,7 +18,9 @@ export const projectsData = [
   {
     id: 1,
     title: "Bech-Cha: E-commerce Platform",
-    description: "An online platform for buying and selling products with a variety of options like: sorting, filtering, tracking, Dashboard, Stock Management, and many more.",
+    description: `
+      An online platform for buying and selling products with a variety of options like: sorting, filtering, tracking, Dashboard, Stock Management, and many more.
+    `,
     images: [
       EcommerceHomePage, EcommerceAdmindash, EcommerceFilters, EcommerceManagement, EcommerceProductPage
     ],
@@ -44,21 +46,21 @@ export const projectsData = [
     xs: 4
   },
   {
-    id: 4,
+    id: 3,
     title: "Chat Application",
     description: "A very basic real-time chat application built with Node.js and Socket.io.",
-    images: [ChatChat, ChatLogin],
+    images: [ChatLogin, ChatChat],
     alt: "Screenshot of the Chat Application",
     github: "https://github.com/rxmxndai/chat-app-nodev3",
     live: "https://chatapp.example.com",
     techStacks: ["Node.js", "Express", "Socket.io", "React"],
-    featured: true,
+    featured: false,
     xs: 4
   },
   {
     id: 4,
-    title: "Game Sallah - Game Recommendation Website",
-    description: "UI design for game recommendation website. ",
+    title: "Game Recommendation Web-Design",
+    description: "A simple UI design for game recommendation website. ",
     images: [
       GameRecommendation, GameHome,
     ],
@@ -68,5 +70,34 @@ export const projectsData = [
     techStacks: ["Figma", "BalsamiQ"],
     featured: false,
     xs: 4
+  },
+  {
+    id: 5,
+    title: "Course Management System",
+    description: "A Java Swing-based application for managing course data with file handling. Features include user authentication, student and tutor dashboards, and admin controls.",
+    images: [
+      PortfolioSkills,
+    ],
+    alt: "Screenshot of the Course Management System",
+    github: "https://github.com/rxmxndai/Course-Management-System-File-base-Java-Swing-",
+    live: "",
+    techStacks: ["Java", "Javax", "JavaFx"],
+    featured: true,
+    xs: 5
+  },
+  {
+    id: 6,
+    title: "Water Billing System",
+    description: `A Java Spring Boot and MySQL application for generating water bills. Features include CRUD operations for admin, invoice generation, and personal info updates for users.`,
+    images: [
+      PortfolioSkills,
+    ],
+    alt: "Screenshot of the Water Billing System",
+    github: "https://github.com/rxmxndai/Water-Billing-System-JAVA-SPRING_BOOT-MySQL",
+    live: "",
+    techStacks: ["Java", "Javax", "JavaFx"],
+    featured: true,
+    xs: 7
   }
 ];
+

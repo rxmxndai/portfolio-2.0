@@ -4,7 +4,7 @@ const SingleProjectCard = ({ project }) => {
 
     return (
         <Card elevation={24}
-            sx={{ bgcolor: "#333", color: "#ffffff", display: "flex", flexDirection: project.xs < 7 ? "column" : "row" }}
+            sx={{ bgcolor: "#333", color: "#ffffff", display: "flex", flexDirection: (  project.featured ) ? "row" : "column" }}
         >
             <CardActionArea sx={{ flex: 1  }} >
                 <CardMedia
@@ -13,9 +13,9 @@ const SingleProjectCard = ({ project }) => {
                     alt={project.alt}
                 />
             </CardActionArea>   
-            <CardContent sx={{ flex: 1 }} >
-                <Typography gutterBottom component="div" variant="h6" > {project.title} </Typography>
-                <Typography  variant="body3" sx={{ fontSize: "14px" }} > {project.description} </Typography>
+            <CardContent sx={{ flex: 1, display: "flex", flexDirection: "column", gap: "10px" }} >
+                <Typography gutterBottom component="div" variant="h5" > {project.title} </Typography>
+                <Typography  variant="body3"  > {project.description} </Typography>
             </CardContent>
         </Card>
     )

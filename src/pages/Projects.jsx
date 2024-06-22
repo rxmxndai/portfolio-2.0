@@ -11,7 +11,7 @@ const Projects = () => {
       <Box sx={{ p: 5, display: "flex", flexDirection: "column", alignItems: "center" }} >
 
         <SectionHeader header="Projects" />
-        <Grid container  spacing={5} sx={{ display: "flex", justifyContent: "space-evenly",}} >
+        <Grid container  spacing={5} sx={{ display: "flex", justifyContent: "space-around",}} >
           {projectsData.map(project => (
             <Grid key={project.id}  item xs={project.xs} >
               <SingleProjectCard  project={project} />
