@@ -52,7 +52,7 @@ export const projectsData = [
     images: [ChatLogin, ChatChat],
     alt: "Screenshot of the Chat Application",
     github: "https://github.com/rxmxndai/chat-app-nodev3",
-    live: "https://chatapp.example.com",
+    live: "",
     techStacks: ["Node.js", "Express", "Socket.io", "React"],
     featured: false,
     xs: 4
@@ -65,7 +65,7 @@ export const projectsData = [
       GameRecommendation, GameHome,
     ],
     alt: "Screenshot of the Figma Design",
-    github: "",
+    github: "https://github.com/rxmxndai/Game-Sallah-Recommendation-website-UI-",
     live: "",
     techStacks: ["Figma", "BalsamiQ"],
     featured: false,
