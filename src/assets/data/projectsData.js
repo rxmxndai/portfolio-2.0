@@ -39,8 +39,8 @@ export const projectsData = [
       PortfolioHome, PortfolioSkills
     ],
     alt: "Screenshot of the Portfolio Website",
-    github: "",
-    live: "",
+    github: "https://github.com/rxmxndai/portfolio-2.0",
+    live: "https://romankarki.vercel.app/",
     techStacks: ["ReactJS", "MaterialUI"],
     featured: false,
     xs: 4
@@ -52,7 +52,7 @@ export const projectsData = [
     images: [ChatLogin, ChatChat],
     alt: "Screenshot of the Chat Application",
     github: "https://github.com/rxmxndai/chat-app-nodev3",
-    live: "",
+    live: "https://chat-app-nodev3.vercel.app/",
     techStacks: ["Node.js", "Express", "Socket.io", "React"],
     featured: false,
     xs: 4

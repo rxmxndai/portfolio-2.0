@@ -21,8 +21,8 @@ const SingleProjectCard = ({ project }) => {
                     <Typography gutterBottom variant="body3"  > {project.description} </Typography>
                 </Box>
                 <Box sx={{ justifySelf: "end", display: "flex", gap: 4, pt: 2 }} >
-                    <ButtonBase href={project.github} > <CodeIcon /> </ButtonBase>
-                    { project.live && <ButtonBase href={project.live} > <OpenInNewIcon /> </ButtonBase> }
+                    <ButtonBase href={project.github} target={"_blank"} > <CodeIcon /> </ButtonBase>
+                    { project.live && <ButtonBase target={"_blank"} href={project.live} > <OpenInNewIcon /> </ButtonBase> }
                 </Box>
             </CardContent>
         </Card>
